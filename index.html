@@ -47,11 +47,11 @@
       }
       b.ex1:hover,
       b.ex1:active {
-        color: #d90429;
+        color: #a4161a;
       }
       div.daohanghover:hover,
       div.daohanghover:active {
-        background-color: #2b2d42;
+        background-color: #1b263b;
       }
 
       .daohangan {
@@ -78,13 +78,34 @@
           width: 95%"
         }
       }
+      @keyframes icon {
+        0% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        70%{
+            opacity: 0.1;
+        }
+        100% {
+          opacity: 0;
+          transform: scale(1.5);
+        }
+      }
+      .icon {
+        animation: icon;
+        animation-name: icon;
+        animation-duration: 0.7s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-direction: reverse;
+      }
     </style>
   </head>
   <body class="flex">
     <!--头部栏-->
     <div
       style="
-        background-color: #8d99ae;
+        background-color: #778da9;
         text-align: center;
         border-radius: 8px;
         padding: 15px;
@@ -98,6 +119,7 @@
         src="https://pic1.imgdb.cn/item/69df618bdea40c4b80743fd1.png"
         width="60px"
         alt="FANHE"
+        class="icon"
       />
       <div
         style="background-color: white; height: 1px; width: 95%; margin: auto"
@@ -110,7 +132,7 @@
       <!--侧边栏-->
       <div
         style="
-          background-color: #8d99ae;
+          background-color: #778da9;
           height: 100;
           margin: 10px;
           border-radius: 8px;
@@ -119,42 +141,46 @@
       >
         <div
           class="daohang daohanghover"
-          style="border-radius: 8px 8px 0px 0px"
+          style="border-radius: 8px 8px 0px 0px; background-color: #415a77"
         >
           <a href="index.html" class="daohangan">首页</a>
         </div>
         <div class="daohang daohanghover">
-          <a href="index.html" class="daohangan">首页</a>
+          <a href="index.html" class="daohangan">导航</a>
         </div>
         <div class="daohang daohanghover">
-          <a href="index.html" class="daohangan">关于</a>
+          <a href="about.html" class="daohangan">关于</a>
         </div>
         <div class="daohang daohanghover">
-          <a href="index.html" class="daohangan">首页</a>
+          <a href="index.html" class="daohangan">导航</a>
         </div>
       </div>
       <!--内容区-->
       <div
         style="
-          background-color: #8d99ae;
+          background-color: #778da9;
           height: 100;
           padding: 50px;
           margin: 10px;
           border-radius: 8px;
         "
         class="flex1 yinying"
-      ></div>
+      >
+        <b style="color: white">你好，这里是FANHE的网页</b>
+      </div>
     </div>
     <!--页尾-->
     <div style="padding: 20px; width: 100%; text-align: center">
-      <b style="color: #ef233c">Copyright © 2026-2026&nbsp;|</b>
+      <b style="color: #e5383b">Copyright © 2026-2026&nbsp;|</b>
       <a
         href="https://space.bilibili.com/2010621595"
         target="_blank"
-        style="color: #ef233c; text-decoration: none"
+        style="color: #e5383b; text-decoration: none"
         ><b class="ex1">我的BILIBILI</b>
       </a>
-      <b style="color: #ef233c">&nbsp;|&nbsp;All Rights Reserved</b>
+      <b style="color: #e5383b">&nbsp;|&nbsp;All Rights Reserved</b>
     </div>
   </body>
 </html>
+
+<!--GIThub链接https://fanhe-cn.github.io/this-is-FANHE/-->
