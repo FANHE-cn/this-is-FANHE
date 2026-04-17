@@ -63,16 +63,16 @@
       }
 
       .hrline {
+        animation: hrline;
         animation-name: hrline;
-        animation-duration: 3s;
+        animation-duration: 0.7s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
-        animation-direction: reverse;
       }
 
       @keyframes hrline {
         0% {
-
+          width: 0%;
         }
         100% {
           width: 95%"
@@ -99,7 +99,10 @@
         width="60px"
         alt="FANHE"
       />
-      <hr style="width: 0%" class="hrline" />
+      <div
+        style="background-color: white; height: 1px; width: 95%; margin: auto"
+        class="hrline yinying"
+      ></div>
       <p><b>这里是 FANHE</b></p>
     </div>
     <!--主区域-->
