@@ -121,20 +121,16 @@
       }
       .box {
         display: flex;
-        overflow-y: auto;
         scroll-snap-type: x mandatory;
         width: 90%;
-        height: 90%;
+        text-align: center;
       }
       .photo {
         flex-shrink: 0;
         display: flex;
-        scroll-snap-align: center;
-        scroll-snap-stop: always;
-        overflow-y: auto;
         justify-content: center;
-        width: 100%;
-        height: 100%;
+        width: 50%;
+        margin: auto;
       }
 
       .container::-webkit-scrollbar {
@@ -209,7 +205,14 @@
           border-radius: 8px;
         "
         class="flex1 yinying"
-      ></div>
+      >
+        <div class="box">
+          <img
+            src="https://pic1.imgdb.cn/item/69e37f30c84565a4b2d88332.png"
+            class="photo"
+          />
+        </div>
+      </div>
     </div>
     <!--页尾-->
     <div style="padding: 20px; width: 100%; text-align: center">

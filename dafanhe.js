@@ -1,5 +1,12 @@
 
 let counter = 0;      
+document.addEventListener('DOMContentLoaded', function() {
+    const playButton = document.getElementById('image');
+    const audioPlayer = document.getElementById('audioPlayer');
+playButton.addEventListener('click', function() {
+        audioPlayer.play(); // 播放音频
+    });
+});
     document
         .getElementById("image")
         .addEventListener("mousedown", function () {
@@ -22,4 +29,5 @@ let counter = 0;
           this.src = "https://pic1.imgdb.cn/item/69df618bdea40c4b80743fd1.png"; // 鼠标移出时的图片，确保松开手后变回原始状态
           this.classList.remove("active"); // 移除active类以移除CSS变换
         });
+        
         
