@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="cache-control" content="public" max-age="3600">
+    <meta http-equiv="cache-control" content="public" max-age="3600" />
     <title>This is FANHE</title>
     <link
       rel="icon"
@@ -119,6 +119,23 @@
         animation-fill-mode: both;
         animation-delay: 1.5s;
       }
+      .box {
+        display: flex;
+        scroll-snap-type: x mandatory;
+        width: 90%;
+        text-align: center;
+      }
+      .photo {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        height: 47vh;
+        margin: auto;
+      }
+
+      .container::-webkit-scrollbar {
+        width: 0px;
+      }
     </style>
   </head>
   <body class="flex">
@@ -161,7 +178,7 @@
       >
         <div
           class="daohang daohanghover"
-          style="border-radius: 8px 8px 0px 0px;"
+          style="border-radius: 8px 8px 0px 0px"
         >
           <a href="index.html" class="daohangan">首页</a>
         </div>
@@ -171,7 +188,7 @@
         <div class="daohang daohanghover">
           <a href="dafanhe.html" class="daohangan">玩我</a>
         </div>
-        <div class="daohang daohanghover" style="background-color: #415a77">
+        <div class="daohang daohanghover">
           <a href="about.html" class="daohangan">关于</a>
         </div>
         <div class="daohang daohanghover">
@@ -180,7 +197,7 @@
         <div class="daohang daohanghover">
           <a href="help.html" class="daohangan">帮助</a>
         </div>
-        <div class="daohang daohanghover">
+        <div class="daohang daohanghover" style="background-color: #415a77">
           <a href="pay.html" class="daohangan">打赏</a>
         </div>
       </div>
@@ -188,28 +205,25 @@
       <div
         style="
           background-color: #778da9;
-          height: 100;
-          padding: 40px;
-          margin: 10px;                                                                                                                                                                                                                                                                                                                                                                                     
+          padding: 10px;
+          margin: 10px;
           border-radius: 8px;
         "
         class="flex1 yinying"
-      ><b style="color: white">联系我们：</br>
-            邮箱：1620496828@qq.com</br>
-            QQ：1620496828</br>
-            QQ群：526329292</br>
-        </br></br></br></br></br>
-        特别鸣谢：</br>
-        FANHE</br>
-        饭盒</br>
-        哀莫大于心死</br>
-        饭盒饭盒饭</br>
-        孤独缺爱患者</br>
-        和先生
-        </b></div>
+      >
+        <div class="box" style="flex-direction: column">
+          <img
+            src="https://s41.ax1x.com/2026/04/21/pegb4z9.jpg"
+            class="photo"
+          />
+          <p><b style="color: white">打赏我喵，我很可爱，给我钱喵</b></p>
+        </div>
+      </div>
     </div>
     <!--页尾-->
-    <div style="padding: 20px; width: 100%; text-align: center; font-size: 13px">
+    <div
+      style="padding: 20px; width: 100%; text-align: center; font-size: 13px"
+    >
       <b style="color: #e5383b">Copyright © 2026-2026&nbsp;|</b>
       <a
         href="https://space.bilibili.com/2010621595"

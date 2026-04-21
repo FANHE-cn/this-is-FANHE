@@ -11,6 +11,32 @@
       href="https://pic1.imgdb.cn/item/69df618bdea40c4b80743fd1.png"
     />
     <style>
+        .scroll::-webkit-scrollbar {
+          width: 4px;
+          background: linear-gradient(
+            to bottom,
+            hsl(0deg,100%,50%,0.4) 0%,
+            hsl(40deg,100%,50%) 20%,
+            hsl(80deg,100%,50%) 30%,
+            hsl(120deg,100%,50%) 40%,
+            hsl(180deg,100%,50%) 50%,
+            hsl(250deg,100%,50%) 80%,
+            hsl(320deg,100%,50%,0.4) 100%,
+          );
+          border-radius: 4px;
+        }
+
+        .scroll::-webkit-scrollbar-thumb {
+          background: linear-gradient(
+            to bottom,
+            hsl(0deg,100%,50%,0) 0%,
+            hsl(0deg,100%,100%,0.9) 20%,
+            hsl(0deg,100%,100%,0.9) 80%,
+            hsl(0deg,100%,50%,0) 100%
+          );
+          border-radius: 100%;
+        }
+
         body {
           margin: 0;
           height: 100vh;
@@ -105,7 +131,6 @@
       }
       .icon {
         animation: icon;
-        animation-name: icon;
         animation-duration: 0.7s;
         animation-timing-function: ease-out;
         animation-fill-mode: forwards;
@@ -113,7 +138,6 @@
       }
       .headlan {
         animation: headlan;
-        animation-name: headlan;
         animation-duration: 0.5s;
         animation-timing-function: ease;
         animation-fill-mode: both;
@@ -177,23 +201,35 @@
         <div class="daohang daohanghover" style="background-color: #415a77">
           <a href="pinglun.html" class="daohangan">评论</a>
         </div>
+        <div class="daohang daohanghover">
+          <a href="help.html" class="daohangan">帮助</a>
+        </div>
+        <div class="daohang daohanghover">
+          <a href="pay.html" class="daohangan">打赏</a>
+        </div>
       </div>
       <!--内容区-->
       <div
         style="
           background-color: #778da9;
           height: 100;
-          padding: 50px;
+          padding: 15px;
           margin: 10px;
           border-radius: 8px;
         "
         class="flex1 yinying"
       >
-        <iframe src="pinglunqu.html" style="width: 100%; height: 100%"></iframe>
+        <iframe
+          src="pinglunqu.html"
+          style="width: 100%; height: 100%; border: 0"
+          class="scroll"
+        ></iframe>
       </div>
     </div>
     <!--页尾-->
-    <div style="padding: 20px; width: 100%; text-align: center">
+    <div
+      style="padding: 20px; width: 100%; text-align: center; font-size: 13px"
+    >
       <b style="color: #e5383b">Copyright © 2026-2026&nbsp;|</b>
       <a
         href="https://space.bilibili.com/2010621595"
