@@ -121,16 +121,20 @@
       }
       .box {
         display: flex;
-        scroll-snap-type: x mandatory;
-        width: 90%;
-        text-align: center;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        width: 52%;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
       }
       .photo {
         flex-shrink: 0;
         display: flex;
-        justify-content: center;
-        height: 47vh;
-        margin: auto;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
       }
 
       .container::-webkit-scrollbar {
@@ -211,13 +215,23 @@
         "
         class="flex1 yinying"
       >
-        <div class="box" style="flex-direction: column">
+        <div class="box" style="flex-direction: row">
           <img
             src="https://s41.ax1x.com/2026/04/22/peRmVRe.jpg"
             class="photo"
           />
-          <p><b style="color: #1b263b">打赏我喵，我很可爱，给我钱喵</b></p>
+          <img
+            src="https://s41.ax1x.com/2026/04/22/peRmVRe.jpg"
+            class="photo"
+          />
+          <img
+            src="https://s41.ax1x.com/2026/04/22/peRm7Se.jpg"
+            class="photo"
+          />
         </div>
+        <p style="text-align: center">
+          <b style="color: #1b263b">打赏咱喵，咱很可爱，给咱钱喵</b>
+        </p>
       </div>
     </div>
     <!--页尾-->
