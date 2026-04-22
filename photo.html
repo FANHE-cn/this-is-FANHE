@@ -121,16 +121,19 @@
       }
       .box {
         display: flex;
-        scroll-snap-type: x mandatory;
-        width: 90%;
-        text-align: center;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        width: 52%;
+        align-items: center;
+        justify-content: center;
       }
       .photo {
         flex-shrink: 0;
         display: flex;
-        justify-content: center;
-        width: 50%;
-        margin: auto;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
       }
 
       .container::-webkit-scrollbar {
@@ -205,7 +208,7 @@
       <div
         style="
           background-color: #ffffff;
-          padding: 50px;
+          padding: 20px;
           margin: 10px;
           border-radius: 8px;
         "
@@ -214,6 +217,31 @@
         <div class="box">
           <img
             src="https://pic1.imgdb.cn/item/69e37f30c84565a4b2d88332.png"
+            class="photo"
+          />
+          <img
+            src="https://pic1.imgdb.cn/item/69e37f30c84565a4b2d88332.png"
+            class="photo"
+          />
+          <img
+            src="https://pic1.imgdb.cn/item/69e37f30c84565a4b2d88332.png"
+            class="photo"
+          />
+          <!--上方为垫子-->
+          <img
+            src="https://pic1.imgdb.cn/item/69e37f30c84565a4b2d88332.png"
+            class="photo"
+          />
+          <img
+            src="https://pic1.imgdb.cn/item/69e37f2bc84565a4b2d88328.png"
+            class="photo"
+          />
+          <img
+            src="https://pic1.imgdb.cn/item/69e37f27c84565a4b2d88323.png"
+            class="photo"
+          />
+          <img
+            src="https://pic1.imgdb.cn/item/69e37f33c84565a4b2d88337.png"
             class="photo"
           />
         </div>
